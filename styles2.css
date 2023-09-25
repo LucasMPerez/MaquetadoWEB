@@ -1,0 +1,165 @@
+    /* Estilos CSS en el archivo externo styles.css */
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #ff2f00;
+        color: #1e9d7d;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 100;
+    }
+
+    .logo {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+    }   
+
+    .menu li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* Estilos CSS en styles.css para la sección hero */
+    .hero {
+        background-image: url('imagen_de_fondo.jpg'); /* Puedes reemplazar 'imagen_de_fondo.jpg' con la ruta de tu imagen de fondo */
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+    }
+
+    .cta-button:hover {
+        background-color: #555;
+    }
+
+    /* Estilos CSS para la sección de dos columnas */
+    .two-column-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .column {
+        flex-basis: 48%; /* Ajusta el ancho de las columnas según tus necesidades */
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .two-column-section h2 {
+        font-size: 24px;
+    }
+
+    .two-column-section p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .two-column-section .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .two-column-section .cta-button:hover {
+        background-color: #555;
+    }
+
+    /* Estilos CSS para la galería de servicios con 2 filas de 4 fotos */
+    .service-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* Cambiamos de 'space-between' a 'flex-start' para que las fotos estén en la misma línea */
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .service-item {
+        flex-basis: calc(50% - 20px); /* Ajustamos el ancho de cada elemento para que haya 2 por fila */
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+
+    .service-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .service-item h3 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+
+    /* Estilos CSS para el footer */
+    footer {
+        background-color: #ff2f00;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-column {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 20px;
+    }
+
+    .footer-column img {
+        max-width: 100px; /* Ajusta el ancho del logo de la empresa según tus necesidades */
+    }
+
+    .social-link img {
+        max-width: 30px; /* Ajusta el ancho de los logotipos de redes sociales según tus necesidades */
+        margin-right: 10px;
+    }
+
+
