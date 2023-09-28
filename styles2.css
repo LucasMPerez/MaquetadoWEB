@@ -4,42 +4,53 @@
         top: 0;
         width: 100%;
         background-color: #ff2f00;
-        color: #1e9d7d;
+        color: blueviolet;
         padding: 10px 0;
-        text-align: center;
+        display: flex; /* Utilizamos flexbox para alinear elementos */
+        justify-content: center; /* Centramos los elementos horizontalmente */
+        align-items: center; /* Centramos los elementos verticalmente */
         z-index: 100;
     }
 
-    .logo {
-        display: inline-block;
-        margin-right: 20px;
+    header h1 {
+        margin: 0; /* Eliminamos el margen predeterminado del h1 */
+        flex: 1; /* El título ocupará el espacio disponible restante */
+        text-align: center; /* Centramos el texto del título */
     }
 
-    .menu {
-        display: inline-block;
+    .logo {
+        margin-right: 20px;
+        text-align: left;
+    }
+    .logo img {
+        max-width: 50px; /* Ajusta el valor según el tamaño deseado */
     }
 
     .menu ul {
-        list-style-type: none;
-        padding: 0;
-    }   
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Eliminamos el margen predeterminado de la lista */
+    text-align: center; /* Centramos los elementos de la lista horizontalmente */
+    }
 
+    /* Estilos para los elementos de la lista de menú */
     .menu li {
         display: inline;
         margin-right: 20px;
     }
 
+    /* Estilos para los enlaces del menú */
     .menu a {
         text-decoration: none;
-        color: #fff;
+        color: blueviolet;
     }
 
     /* Estilos CSS en styles.css para la sección hero */
     .hero {
-        background-image: url('imagen_de_fondo.jpg'); /* Puedes reemplazar 'imagen_de_fondo.jpg' con la ruta de tu imagen de fondo */
+        background-image: url('imagenes/background ByN.jpg'); /* Puedes reemplazar 'imagen_de_fondo.jpg' con la ruta de tu imagen de fondo */
         background-size: cover;
         background-position: center;
-        color: #fff;
+        color: blueviolet;
         text-align: center;
         padding: 100px 0;
     }
@@ -113,29 +124,33 @@
 
     /* Estilos CSS para la galería de servicios con 2 filas de 4 fotos */
     .service-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start; /* Cambiamos de 'space-between' a 'flex-start' para que las fotos estén en la misma línea */
-        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+        grid-template-rows: repeat(4, 1fr); /* 4 filas iguales */
+        grid-gap: 20px; /* Espacio entre elementos */
         padding: 20px;
     }
-
+    
     .service-item {
-        flex-basis: calc(50% - 20px); /* Ajustamos el ancho de cada elemento para que haya 2 por fila */
         text-align: center;
         border: 1px solid #ccc;
         padding: 10px;
         background-color: #f9f9f9;
     }
-
+    
     .service-item img {
         max-width: 100%;
         height: auto;
     }
-
+    
     .service-item h3 {
         margin-top: 10px;
         font-size: 18px;
+    }
+    
+    /* Añade este estilo para limitar el número de filas */
+    .service-item:nth-child(n+10) {
+        display: none; /* Oculta elementos a partir del quinto */
     }
 
 
@@ -143,18 +158,19 @@
     footer {
         background-color: #ff2f00;
         color: #fff;
-        padding: 20px 0;
+        padding: 10px 0; /* Espaciado vertical reducido */
         text-align: center;
+        display: flex; /* Utilizamos flexbox para alinear elementos */
+        justify-content: center; /* Centramos los elementos horizontalmente */
+        align-items: center; /* Centramos los elementos verticalmente */
     }
 
     .footer-column {
-        display: inline-block;
-        vertical-align: top;
         margin: 0 20px;
     }
 
     .footer-column img {
-        max-width: 100px; /* Ajusta el ancho del logo de la empresa según tus necesidades */
+        max-width: 50px; /* Ajusta el ancho del logo de la empresa según tus necesidades */
     }
 
     .social-link img {
